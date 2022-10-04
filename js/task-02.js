@@ -16,17 +16,27 @@ const ingredients = [
 // После чего вставит все <li> за одну операцию в список ul#ingredients.
 
 
+const list = [];
+
+ingredients.map(element => {
+  list.push(element);
+  console.log(list);
+
+});
+
+list.append(item);
+ 
 
 
 
-ingredients.forEach(element => {
+// ingredients.forEach(element => {
     
-  const list = document.querySelector('#ingredients');
-  const item = document.createElement('li');
-  item.textContent = element;
-  list.append(item);
+//   const list = document.querySelector('#ingredients');
+//   const item = document.createElement('li');
+//   item.textContent = element;
+//   list.append(item);
   
-    return element;
+//     return element;
 
-  });
+//   });
 

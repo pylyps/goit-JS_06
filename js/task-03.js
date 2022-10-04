@@ -30,7 +30,7 @@ console.log(galleryEl);
 
 
 const galeryElement = images.map(image => {
-  return '<li class="list"><img class="img-gallery" src="${images.url" alt="${images.alt}"/>'
+  return `<li class="list"><img class="img-gallery" src="${image.url}" alt= "${image.alt}"/>`
 }).join(``);
 console.log(images);
 galleryEl.insertAdjacentHTML('beforeend', galeryElement);
